@@ -1,0 +1,110 @@
+.list-stories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px; */
+    /* row-gap: 18px; */
+    flex-wrap: wrap;
+    margin: -7.5px;
+}
+.list-stories>* {
+    width: 50%;
+    padding: 7.5px;
+}
+h3.title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #8EACCD;
+}
+
+.list-stories .story {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d2e0fb;
+    background-color: transparent;
+    box-shadow: 10px 10px 5px 0px #8eaccd;
+    -webkit-box-shadow: 10px 10px 5px 0px #8eaccd;
+    -moz-box-shadow: 10px 10px 5px 0px #8eaccd;
+}
+.list-stories .story a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+}
+.list-stories .story a.story-thumnail {
+    height: 130px;
+}
+.list-stories .story a.story-thumnail img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.list-stories .story a.story-content {
+    padding-top: 10px;
+}
+.list-stories .story a.story-content h3 {
+    padding-bottom: 8px;
+    margin: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+.list-stories .story a.story-content p {
+    margin: 0;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.btn-edit {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #8EACCD;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #8EACCD;
+}
+.btn-edit svg {
+    height: 14px;
+    fill: #fff;
+}
